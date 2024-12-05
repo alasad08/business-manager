@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <div className="container mx-auto my-4 max-lg:px-4">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
           <div className="p-4 bg-zinc-900 rounded text-white ring-1 ring-white/10">
             <p className="mb-1 text-sm text-gray-300">All time</p>
             <p className="text-3xl text-orange-300">৳ 8,590</p>
