@@ -1,13 +1,13 @@
 const Navbar = () => {
   return (
     <>
-      <div className="bg-white p-4 fixed w-full">
+      <div className="bg-zinc-900 p-2 fixed w-full">
         <div className="container flex gap-8 mx-auto">
-          <div className="Brand text-xl my-auto">Quail</div>
+          <div className="Brand text-xl my-auto text-zinc-100">Quail</div>
           <div className="Search w-full my-auto">
             <input
               type="text"
-              className="bg-gray-100 p-2 px-4 rounded w-full"
+              className="bg-zinc-800 p-2 px-4 rounded w-full"
               placeholder="Search..."
             />
           </div>

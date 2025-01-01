@@ -13,7 +13,7 @@ const ShareHolderCard = () => {
 
   return (
     <>
-      <div className="bg-white p-4 rounded">
+      <div className="bg-zinc-900 p-4 rounded text-zinc-200">
         <h2 className="text-xl mb-2">Share Holders</h2>
         <ul>
           {shareHolders.map((shareHolder) => {
@@ -26,7 +26,7 @@ const ShareHolderCard = () => {
             return (
               <li
                 key={shareHolder.id}
-                className="flex p-2 rounded bg-gray-200 my-2"
+                className="flex p-2 rounded bg-zinc-800 my-2"
               >
                 {shareHolder.name}: ৳{shareHolder.ammount}{" "}
                 <span className="ml-auto">{percentage}%</span>

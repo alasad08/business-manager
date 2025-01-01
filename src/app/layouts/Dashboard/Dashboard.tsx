@@ -4,7 +4,7 @@ import ShareHolderCard from "@/app/components/ShareHolder";
 const Dashboard = () => {
   return (
     <>
-      <div className="container mx-auto my-4 max-lg:px-4 gap-4 grid">
+      <div className="container mx-auto max-lg:px-4 gap-4 grid pt-20">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
           <Card />
           <div className="p-4 bg-zinc-900 rounded text-white ring-1 ring-white/10">
