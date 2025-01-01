@@ -8,13 +8,13 @@ const ShareHolderCard = () => {
   // Calculate the total amount
   const totalAmount = shareHolders.reduce(
     (total, shareHolder) => total + shareHolder.ammount,
-    0
+    0,
   );
 
   return (
     <>
-      <div className="bg-zinc-900 p-4 rounded text-zinc-200">
-        <h2 className="text-xl mb-2">Share Holders</h2>
+      <div className="rounded bg-zinc-900 p-4 text-zinc-200">
+        <h2 className="mb-2 text-xl">Share Holders</h2>
         <ul>
           {shareHolders.map((shareHolder) => {
             // Calculate the percentage
@@ -26,7 +26,7 @@ const ShareHolderCard = () => {
             return (
               <li
                 key={shareHolder.id}
-                className="flex p-2 rounded bg-zinc-800 my-2"
+                className="my-2 flex rounded bg-zinc-800 p-2"
               >
                 {shareHolder.name}: ৳{shareHolder.ammount}{" "}
                 <span className="ml-auto">{percentage}%</span>

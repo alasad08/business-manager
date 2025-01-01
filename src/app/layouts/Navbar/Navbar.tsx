@@ -1,19 +1,19 @@
 const Navbar = () => {
   return (
     <>
-      <div className="bg-zinc-900 p-2 fixed w-full">
-        <div className="container flex gap-8 mx-auto">
-          <div className="Brand text-xl my-auto text-zinc-100">Quail</div>
-          <div className="Search w-full my-auto">
+      <div className="fixed w-full bg-zinc-950 p-2">
+        <div className="container mx-auto flex gap-8">
+          <div className="Brand my-auto text-xl text-zinc-100">Quail</div>
+          <div className="Search my-auto w-full">
             <input
               type="text"
-              className="bg-zinc-800 p-2 px-4 rounded w-full"
+              className="w-full rounded bg-zinc-900 p-2 px-4"
               placeholder="Search..."
             />
           </div>
           <div className="Profile">
-            <p className="size-10 bg-purple-500 rounded-full flex">
-              <span className="m-auto text-xl text-white font-medium">S</span>
+            <p className="flex size-10 rounded-xl bg-purple-500">
+              <span className="m-auto text-xl font-medium text-white">S</span>
             </p>
           </div>
         </div>

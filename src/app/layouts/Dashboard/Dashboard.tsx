@@ -3,49 +3,33 @@ import ShareHolderCard from "@/app/components/ShareHolder";
 
 const Dashboard = () => {
   return (
-    <>
-      <div className="container mx-auto max-lg:px-4 gap-4 grid pt-20">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
-          <Card />
-          <div className="p-4 bg-zinc-900 rounded text-white ring-1 ring-white/10">
-            <p className="mb-1 text-sm text-gray-300">All time</p>
-            <p className="text-3xl text-orange-300">৳ 8,590</p>
-            <div className="flex mt-1">
-              <p className="text-lg text-gray-200">Total Asset</p>
-              <p className="text-base text-green-400 my-auto ml-auto">
-                ৳1,180 in cash
-              </p>
-            </div>
-          </div>
+    <main className="container mx-auto text-zinc-100 max-lg:px-4">
+      <div className="pt-14"></div>
 
-          <div className="p-4 bg-zinc-900 rounded text-white ring-1 ring-white/10">
-            <p className="mb-1 text-sm text-gray-300">This month</p>
-            <p className="text-3xl text-red-400">৳ 5,750</p>
-            <div className="flex mt-1">
-              <p className="text-lg text-gray-200">Spend</p>
-              <p className="text-base text-gray-200 my-auto ml-auto">
-                ৳191.66 per day
-              </p>
-            </div>
-          </div>
-
-          <div className="p-4 bg-zinc-900 rounded text-white ring-1 ring-white/10">
-            <p className="mb-1 text-sm text-gray-300">December, 2024</p>
-            <p className="text-3xl text-green-400">৳ 2,360</p>
-            <div className="flex mt-1">
-              <p className="text-lg text-gray-200">Revenue</p>
-              <p className="text-base text-gray-200 my-auto ml-auto">
-                ৳78.66 per day
-              </p>
-            </div>
+      <div className="Dashboard grid gap-4 rounded bg-zinc-900 p-4">
+        <div className="Overview flex">
+          <h1 className="py-2 text-2xl">Overview</h1>
+          <div className="Options ml-auto flex gap-2">
+            <a href="" className="Download">
+              D
+            </a>
+            <a href="" className="TimeSpan">
+              7d
+            </a>
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-4">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <Card />
+        </div>
+
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-2">
+          <ShareHolderCard />
+          <ShareHolderCard />
           <ShareHolderCard />
         </div>
       </div>
-    </>
+    </main>
   );
 };
 
