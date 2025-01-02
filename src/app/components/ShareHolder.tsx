@@ -1,7 +1,7 @@
 const ShareHolderCard = () => {
   const shareHolders = [
     { id: 1, name: "Abrar", ammount: 1300 },
-    { id: 2, name: "Riyadh", ammount: 890 },
+    { id: 2, name: "Riyadh", ammount: 1400 },
     { id: 3, name: "Srabon", ammount: 850 },
   ];
 
