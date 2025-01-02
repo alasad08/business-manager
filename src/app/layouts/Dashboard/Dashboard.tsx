@@ -3,10 +3,10 @@ import ShareHolderCard from "@/app/components/ShareHolder";
 
 const Dashboard = () => {
   return (
-    <main className="mx-auto w-full pr-2 text-zinc-100">
+    <main className="flex-grow pr-2 text-zinc-100">
       <div className="pt-14"></div>
 
-      <div className="Dashboard fixed grid h-dvh gap-4 overflow-scroll rounded bg-zinc-900 p-4">
+      <div className="Dashboard grid gap-4 rounded bg-zinc-900 p-4">
         <div className="Overview flex">
           <h1 className="py-2 text-2xl">Overview</h1>
           <div className="Options ml-auto flex gap-2">
